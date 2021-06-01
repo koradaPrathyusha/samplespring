@@ -14,13 +14,13 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 @SpringBootApplication
 
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
-public class SpringBootEmployeeApplication extends springBootServletInitializer{
+public class SpringBootEmployeeApplication extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {
 		 ConfigurableApplicationContext context1=SpringApplication.run(SpringBootEmployeeApplication.class, args);
 	}
 	@Override     
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {          
-		return application.sources(SpringbootFoodApplication.class);     }
+		return application.sources(SpringbootEmployeeApplication.class);     }
 
 }
